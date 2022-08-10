@@ -1,13 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
 }
+body{
+  font-family: 'Rubik';
+}
+
 .container {
   width: 86%;
   margin: auto;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -23,17 +29,30 @@
   font-size: 20px;
   font-weight: bold;
   color: #0b132a;
-  font-family: 'Rubik', sans-serif;
-
+  font-family: "Rubik", sans-serif;
 }
+
 .header .nav ul {
   display: flex;
   align-items: center;
 }
 .header .nav ul li {
   list-style: none;
+}
+
+header .nav li a{
+  display: inline-block;
+  text-decoration: none;
+  color: #4F5665;
   padding: 10px 15px;
-  margin: 8px 16px;
+  border: 1px solid #fff;
+  margin: 0px 5px;
+  border-radius: 8px;
+}
+
+header .nav li a:hover{
+  border-color: #dedede;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
 }
 
 .header .end {
@@ -43,18 +62,16 @@
 .header .end p {
   margin-right: 25px;
   font-size: 20px;
-  font-family: 'Rubik', sans-serif;
-
+  font-family: "Rubik", sans-serif;
 }
 .header .end button {
   padding: 10px 45px;
   border-radius: 15px;
-  border-color: #F53838;
-  color: #F53838;
+  border-color: #f53838;
+  color: #f53838;
   background-color: white;
   outline: none;
   border-style: solid;
-
 }
 .content {
   display: flex;
@@ -67,8 +84,7 @@
   margin-top: 30px;
   font-size: 45px;
   font-weight: 500;
-  font-family: 'Rubik', sans-serif;
-
+  font-family: "Rubik", sans-serif;
 }
 .content .text p {
   margin-top: 25px;
@@ -82,12 +98,10 @@
   width: 40%;
   padding: 15px 0px;
   border-radius: 10px;
-  background-color: #F53838;
-  color: #FFFFFF;
+  background-color: #f53838;
+  color: #ffffff;
   border: none;
-  box-shadow: 0px 20px 35px -15px #F53838 ;
-
-  
+  box-shadow: 0px 20px 35px -15px #f53838;
 }
 .content .leftside img {
   width: 500px;
@@ -108,8 +122,7 @@
 .provided .list h1 {
   font-size: 35px;
   font-weight: 500;
-  font-family: 'Rubik', sans-serif;
-
+  font-family: "Rubik", sans-serif;
 }
 .provided .list p {
   margin: 20px 0px;
@@ -123,18 +136,17 @@
   /* margin-top: 50px; */
   padding-top: 40px;
   text-align: center;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 500;
   font-size: 35px;
-
 }
 .top p {
   margin-top: 20px;
   margin-bottom: 40px;
   text-align: center;
 }
-.memberplan{
-  background-color: #F6F6F6;
+.memberplan {
+  background-color: #f6f6f6;
 }
 .plans {
   display: flex;
@@ -160,8 +172,7 @@
   margin-top: 20px;
   font-size: 18px;
   font-weight: 500;
-  font-family: 'Rubik', sans-serif;
-
+  font-family: "Rubik", sans-serif;
 }
 .plans .plan .facilites .row {
   margin-top: 10px;
@@ -187,41 +198,36 @@
 .plans .plan h5 {
   margin-top: 90px;
 }
-.cta h5{
+.cta h5 {
   text-align: center;
   font-size: 25px;
   font-weight: bold;
-  color:#4F5665;
-  font-family: 'Rubik', sans-serif;
-
-  
+  color: #4f5665;
+  font-family: "Rubik", sans-serif;
 }
-.cta h5 span{
-  color:#abaeb6;
-
+.cta h5 span {
+  color: #abaeb6;
 }
-.cta button{
+.cta button {
   padding: 10px 50px;
   border-radius: 10px;
-  border-color: #F53838;
-  color: #F53838;
+  border-color: #f53838;
+  color: #f53838;
   background-color: white;
   outline: none;
   border-style: solid;
   margin: 25px 0px;
 }
-.plans .plan:last-child .cta button{
-  background-color: #F53838;
-  color: #FFFFFF;
-  box-shadow: 0px 20px 35px -15px #F53838 ;
-
+.plans .plan:last-child .cta button {
+  background-color: #f53838;
+  color: #ffffff;
+  box-shadow: 0px 20px 35px -15px #f53838;
 }
-.memberplan .plans .plan:last-child{
-  border-color: #F53838;
-  
+.memberplan .plans .plan:last-child {
+  border-color: #f53838;
 }
-#review{
-  background-color: #F6F6F6;
+#review {
+  background-color: #f6f6f6;
   padding-bottom: 100px;
 }
 .heading {
@@ -253,13 +259,11 @@
   text-align: center;
   font-size: 35px;
   font-weight: 500;
-  font-family: 'Rubik', sans-serif;
-
+  font-family: "Rubik", sans-serif;
 }
 .review p {
   text-align: center;
   margin-top: 15px;
-
 }
 .commented {
   display: flex;
@@ -289,8 +293,8 @@
 .comments .top .stars img {
   margin: 10px;
 }
-.people .commented .comments:first-child{
-  border-color: #F53838;
+.people .commented .comments:first-child {
+  border-color: #f53838;
 }
 
 .curser {
@@ -340,10 +344,10 @@ footer {
 .footer .subscribebutton button {
   padding: 15px 40px;
   border-radius: 10px;
-  background-color: #F53838;
-  color: #FFFFFF;
+  background-color: #f53838;
+  color: #ffffff;
   border: none;
-  box-shadow: 0px 20px 35px -15px #F53838 ;
+  box-shadow: 0px 20px 35px -15px #f53838;
 }
 .close p {
   margin-top: 20px;
