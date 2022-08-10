@@ -1,12 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap");
 
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
 }
-body{
-  font-family: 'Rubik';
+body {
+  font-family: "Rubik";
+}
+button {
+  cursor: pointer;
 }
 
 .container {
@@ -40,19 +43,19 @@ body{
   list-style: none;
 }
 
-header .nav li a{
+header .nav li a {
   display: inline-block;
   text-decoration: none;
-  color: #4F5665;
+  color: #4f5665;
   padding: 10px 15px;
   border: 1px solid #fff;
   margin: 0px 5px;
   border-radius: 8px;
 }
 
-header .nav li a:hover{
+header .nav li a:hover {
   border-color: #dedede;
-  box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 .header .end {
@@ -62,8 +65,7 @@ header .nav li a:hover{
 
 .header .end a:first-child {
   border: none;
-  color: #4F5665;
-
+  color: #4f5665;
 }
 .header .end a {
   text-decoration: none;
@@ -75,37 +77,41 @@ header .nav li a:hover{
   outline: none;
   font-weight: 500;
 }
-.content {
+.context .content {
   display: flex;
   margin-top: 50px;
 }
-.content .text {
+.context .content .text {
   margin-left: 40px;
 }
-.content .text h1 {
+.context .content .text h1 {
   margin-top: 30px;
   font-size: 45px;
   font-weight: 500;
   font-family: "Rubik", sans-serif;
 }
-.content .text p {
+.context .content .text p {
   margin-top: 25px;
 }
-.content .text h1 span {
+.context .content .text h1 span {
   font-size: 50px;
   font-weight: 700;
 }
-.content button {
+.context .content button {
   margin-top: 35px;
   width: 40%;
-  padding: 15px 0px;
+  padding: 12px 0px;
   border-radius: 10px;
   background-color: #f53838;
   color: #ffffff;
   border: none;
   box-shadow: 0px 20px 35px -15px #f53838;
+  font-weight: 700;
 }
-.content .leftside img {
+.context .content button:hover {
+  box-shadow: 1px 25px 40px -12px #f53838;
+}
+.context .content .leftside img {
   width: 500px;
   height: 330px;
 }
@@ -157,7 +163,7 @@ header .nav li a:hover{
 }
 .plans .plan {
   width: 30%;
-  border: 2px solid;
+  border: 2px solid #dddddd;
   margin-left: 20px;
 
   display: flex;
@@ -211,8 +217,10 @@ header .nav li a:hover{
   color: #abaeb6;
 }
 .cta button {
+  display: inline-block;
   padding: 10px 50px;
-  border-radius: 10px;
+  border-radius: 20px;
+  font-weight: 700;
   border-color: #f53838;
   color: #f53838;
   background-color: white;
@@ -220,11 +228,18 @@ header .nav li a:hover{
   border-style: solid;
   margin: 25px 0px;
 }
+.cta button:hover {
+  box-shadow: 0px 20px 35px -15px #f53838;
+}
 .plans .plan:last-child .cta button {
   background-color: #f53838;
   color: #ffffff;
   box-shadow: 0px 20px 35px -15px #f53838;
 }
+.plans .plan:last-child .cta button:hover {
+  box-shadow: 1px 25px 40px -15px #f53838;
+}
+
 .memberplan .plans .plan:last-child {
   border-color: #f53838;
 }
